@@ -35,3 +35,6 @@ npm i react-native-progress
 npm i axios 
 
 // Criar uma conta no site themoviedb.org
+
+
+npx expo customize babel.config.js
