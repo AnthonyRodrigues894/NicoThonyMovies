@@ -1,5 +1,3 @@
-import { setStatusBarBackgroundColor } from "expo-status-bar"
-
 export const theme = {
     background: '#eab308',
     text: '#eab308',
