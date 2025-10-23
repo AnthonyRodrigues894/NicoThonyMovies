@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { View, Text, Platform, TouchableOpacity, ScrollView } from 'react-native'
 import { StatusBar } from 'react-native'
 import { Bars3BottomLeftIcon, MagnifyingGlassIcon } from 'react-native-heroicons/outline'
 import { styles } from '../theme'
+import TrendingMovies from '../components/trendingMovies'
 
-const ios = Plataform.OS == 'ios';
+const ios = Platform.OS == 'ios';
 
 export default function HomeScreen() {
+  const [trending, setTrending] = useState([1,2,3]);
   return (
     <View className="flex-1 bg-neutral-800">
       <View className={ios ? "-mb-2" : "mb-3"}>
@@ -27,7 +29,7 @@ export default function HomeScreen() {
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{paddingBottom: 20}}
         >
-
+          <TrendingMovies data={trending} />
         </ScrollView>
     </View>
   )
