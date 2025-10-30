@@ -120,3 +120,7 @@ export default function App() {
 
 
 NicoThonyMovies
+
+
+
+npm install react-native-worklets@^0.5.1
