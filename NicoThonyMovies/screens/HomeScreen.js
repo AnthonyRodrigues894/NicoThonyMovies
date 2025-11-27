@@ -24,7 +24,7 @@ export default function HomeScreen() {
           </TouchableOpacity>
 
           <Text className="text-white text-3xl font-bold">
-            <Text style={styles.text}>Tech</Text> Flix
+            <Text style={styles.text}>Nicothony</Text> Movies
           </Text>
 
           <TouchableOpacity>
